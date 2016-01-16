@@ -1,0 +1,87 @@
+.header-bottom {
+  .item {
+    position:relative;
+
+    .carousel-text {
+      position: absolute;
+      top: 45%;
+      left: 15px;
+      width: 50%;
+      color: #ffffff;
+
+      p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 0.9;
+
+        @media screen and (min-width: 370px) {
+          font-size: 1.3em;
+        }
+      }
+
+      .btn-main::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: 2px;
+        @include arrow-right(4px, #fff);
+      }
+
+      .btn-main:hover::after {
+        border-left: 4px solid #dfad00;
+      }
+    }
+  }
+  .image-height {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .carousel-control {
+    width: 5%;
+
+    &.left {
+      background-image: none;
+    }
+
+    &.right {
+      background-image: none;
+    }
+  }
+
+  .arrow-l {
+    @include arrow-pos;
+    height: 64px;
+    margin-top: -32px;
+    left: -15px;
+  }
+
+  .arrow-r {
+    @include arrow-pos;
+    height: 64px;
+    margin-top: -32px;
+    right: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .header-bottom {
+    .item {
+      .arrow-l {
+        height: 128px;
+        margin-top: -64px;
+        left: 0;
+      }
+
+      .arrow-r {
+        height: 128px;
+        margin-top: -64px;
+        right: 0;
+      }
+    }
+  }
+}

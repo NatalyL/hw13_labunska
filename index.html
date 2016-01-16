@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>hw13_labunska</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,100,300&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="h-page">
+    <div class="header-top clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" placeholder="Поиск" name="search">
+                        </form>
+                    </div>
+                    <div class="basket">
+                        <img src="images/basket.png" alt="Basket">
+                    </div>
+                    <div class="menu">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Рекомендую</a>
+                                        <ul class="sub-menu clearfix">
+                                            <li><a href="#">Кондиционер</a></li>
+                                            <li><a href="#">Солярис для лица c витамином "А"</a></li>
+                                            <li><a href="#">Бальзам для век</a></li>
+                                            <li><a href="#">Ночной крем</a></li>
+                                            <li><a href="#">Динамический увлажняющий крем</a></li>
+                                            <li><a href="#">Водные компрессы Мёртвого Моря</a></li>
+                                            <li><a href="#">Лосьон для тела "Солярис"</a></li>
+                                            <li><a href="#">Квартет солей Мертвого моря</a></li>
+                                            <li><a href="#">Очищающее молочко для лица</a></li>
+                                            <li><a href="#">Шампунь против перхоти</a></li>
+                                            <li><a href="#">Комплект пробников кремов</a></li>
+                                            <li><a href="#">Шампунь для повседневного пользования</a></li>
+                                            <li><a href="#">Грязевая маска для лица</a></li>
+                                            <li><a href="#">Тонизирующий лосьон для тела</a></li>
+                                            <li><a href="#">Крем для рук и ногтей</a></li>
+                                            <li><a href="#">Зубная паста "Шинсин"</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Приглашаю</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                                <img src="images/header_man2.png" alt="" class="image-height">
+
+                                <!--<div class="carousel-text">-->
+                                    <!--<p>Купить продукцию сейчас</p>-->
+                                    <!--<a href="#" class="btn-main">Узнать больше</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <img src="images/arrow-l.png" alt="" class="arrow-l">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <img src="images/arrow-r.png" alt="" class="arrow-r">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Новости</h2>
+                <ul class="news-item clearfix">
+                    <li>
+                        <img src="images/news_item1.jpg" alt="">
+
+                        <h3>Доктор Нонна на телеканале "Домашний" в программе "Спросите Повара"</h3>
+                        <a href="#" class="more">Подробнее</a>
+                    </li>
+                    <li>
+                        <img src="images/news_item2.jpg" alt="">
+
+                        <h3>Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"</h3>
+                        <a href="#" class="more">Подробнее</a>
+                    </li>
+                    <li>
+                        <img src="images/news_item3.jpg" alt="">
+
+                        <h3>Доктор Нонна на телеканале "Домашний" в программе "Спросите Повара"</h3>
+                        <a href="#" class="more">Подробнее</a>
+                    </li>
+                    <li>
+                        <img src="images/news_item4.jpg" alt="">
+
+                        <h3>Доктор Нонна на НТВ в программе "Наши со Львом Новоженовым"</h3>
+                        <a href="#" class="more">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recommended">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="title">Я рекомендую</h2>
+                <ul class="products-menu clearfix">
+                    <li class="active"><a href="#">Соли и грязи</a></li>
+                    <li><a href="#">Кремы и лосьены</a></li>
+                    <li><a href="#">Парфюмерия</a></li>
+                    <li><a href="#">Витамины и бады</a></li>
+                    <li><a href="#">Чай</a></li>
+                </ul>
+                <ul class="products clearfix">
+                    <li>
+                        <img src="images/product_item_big.jpg" alt="">
+
+                        <h3>Шампунь ежедневного использования</h3>
+
+                        <p>Доктор Нонна на телеканале домашний в программе
+                            спросите повара Доктор Нонна на телеканале
+                            домашний в программе спросите повара Доктор
+                            Нонна на телеканале домашний в программе Доктор
+                            Нонна на телеканале домашний в программе...</p>
+
+                        <div class="buy clearfix">
+                            <span>280 грн.</span>
+                            <a href="#" class="btn-main">Купить</a>
+                        </div>
+                    </li>
+                    <li>
+                        <ul class="products-list clearfix">
+                            <li>
+                                <img src="images/product_item_1.jpg" alt="">
+
+                                <h3>Шампунь ежедневного использования</h3>
+                                <span>280 грн.</span>
+                            </li>
+                            <li>
+                                <img src="images/product_item_2.jpg" alt="">
+
+                                <h3>Шампунь ежедневного использования</h3>
+                                <span>280 грн.</span>
+                            </li>
+                            <li>
+                                <img src="images/product_item_3.jpg" alt="">
+
+                                <h3>Шампунь ежедневного использования</h3>
+                                <span>280 грн.</span>
+                            </li>
+                            <li>
+                                <img src="images/product_item_1.jpg" alt="">
+
+                                <h3>Шампунь ежедневного использования</h3>
+                                <span>280 грн.</span>
+                            </li>
+                            <li>
+                                <img src="images/product_item_2.jpg" alt="">
+
+                                <h3>Шампунь ежедневного использования</h3>
+                                <span>280 грн.</span>
+                            </li>
+                            <li>
+                                <img src="images/product_item_3.jpg" alt="">
+
+                                <h3>Шампунь ежедневного использования</h3>
+                                <span>280 грн.</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="title">Телеканал теледом</h2>
+
+                <ul class="video-items clearfix">
+                    <li>
+                        <iframe width="100%" height="355" src="https://www.youtube.com/embed/W26DPlUmnVI"
+                                frameborder="0"
+                                allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <ul class="video-items-small clearfix">
+                            <li>
+                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/eU3aSj5wapg"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </li>
+                            <li>
+                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/X7BeZMXKDfw"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </li>
+                            <li>
+                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/X7BeZMXKDfw"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </li>
+                            <li>
+                                <iframe width="100%" height="175" src="https://www.youtube.com/embed/X7BeZMXKDfw"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row interesting-items">
+            <div class="col-xs-12 col-sm-6">
+                <h3>Новые видео</h3>
+                <ul>
+                    <li><a href="#">Шампунь ежедневного пользования (16:54)</a></li>
+                    <li><a href="#">ПРЕМЬЕРА! Ева Бушмина - Религия (05:14)</a></li>
+                    <li><a href="#">Анжелика Варум - Я Всегда С Тобой (Official Video)</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>Популярные</h3>
+                <ul>
+                    <li><a href="#">Шампунь ежедневного пользования (16:54)</a></li>
+                    <li><a href="#">ПРЕМЬЕРА! Ева Бушмина - Религия (05:14)</a></li>
+                    <li><a href="#">Анжелика Варум - Я Всегда С Тобой (Official Video)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="people">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <img src="images/man_people.png" alt="">
+
+                <h2 class="title">Цель мойе жизни - делать людей счастливыми</h2>
+
+                <p>В бизнес компании Dr. Nona пришел на успех своей жены Ольги, которая доказала мне что даже находясь в
+                    декретном
+                    отпуске и гуляя с маленьким ребенком на улице за один месяц можно заработать в два раза больше чем
+                    моя
+                    зарплата
+                    в милиции. Позже я на этот бизнес посмотрел серьезнее и увидел себя в нем. Это дело для серьезных и
+                    амбициозных
+                    людей, которые хотят изменить свою жизнь. 27 декабря 2007 года уволился из МВД и теперь сотрудничаю
+                    ...</p>
+                <a href="#" class="more">Узнать подоробнее</a>
+                <ul class="social clearfix">
+                    <li class="youtube"><a href="#"><span class="fa fa-youtube"></span></a></li>
+                    <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
+                    <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                    <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="business">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="title">Мои партнеры по бизнесу</h2>
+                <ul class="partners">
+                    <li>
+                        <img src="images/partner_1.jpg" alt="">
+
+                        <h3>Диорнева Татьяна</h3>
+
+                        <div>Директор</div>
+                        <div class="town">Мариуполь</div>
+                        <ul class="social clearfix">
+                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
+                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/partner_2.jpg" alt="">
+
+                        <h3>Проценко Мария</h3>
+
+                        <div>Директор</div>
+                        <div class="town">Донецк</div>
+                        <ul class="social clearfix">
+                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
+                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/partner_2.jpg" alt="">
+
+                        <h3>Проценко Мария</h3>
+
+                        <div>Директор</div>
+                        <div class="town">Донецк</div>
+                        <ul class="social clearfix">
+                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
+                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="images/partner_2.jpg" alt="">
+
+                        <h3>Проценко Мария</h3>
+
+                        <div>Директор</div>
+                        <div class="town">Донецк</div>
+                        <ul class="social clearfix">
+                            <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
+                            <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="title">Добро пожаловать в команду</h2>
+
+                <form action="#">
+                    <ul class="clearfix">
+                        <li>
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </li>
+                        <li>
+                            <input type="text" name="tel" placeholder="Телефон">
+                        </li>
+                        <li>
+                            <input type="email" name="email" placeholder="E-mail адрес">
+                        </li>
+                        <li>
+                            <input type="submit" value="Присоединяйся">
+                        </li>
+                    </ul>
+                </form>
+                <p><a href="#" class="more">Узнайте подробнее почему выгодня сотрудничать с нами и быть в нашей
+                    команде</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="ft-page">
+    <div class="container">
+        <div class="row ft-begining">
+            <div class="col-xs-12 col-sm-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis eum
+                    possimus quibusdam, quod recusandae tempore voluptate. Architecto assumenda
+                    deserunt dignissimos libero molestiae nisi officiis pariatur qui. Animi, commodi i
+                    nventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                    corporis eum possimus quibusdam, quod recusandae tempore voluptate. Architecto
+                    assumenda deserunt dignissimos libero molestiae nisi officiis pariatur qui. Animi,
+                    commodi inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto corporis eum possimus quibusdam, quod recusandae tempore
+                    voluptate. Architecto assumenda deserunt dignissimos libero molestiae nisi officiis
+                    pariatur qui. Animi, commodi inventore.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis eum
+                    possimus quibusdam, quod recusandae tempore voluptate. Architecto assumenda
+                    deserunt dignissimos libero molestiae nisi officiis pariatur qui. Animi, commodi i
+                    nventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+                    corporis eum possimus quibusdam, quod recusandae tempore voluptate. Architecto
+                    assumenda deserunt dignissimos libero molestiae nisi officiis pariatur qui. Animi,
+                    commodi inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto corporis eum possimus quibusdam, quod recusandae tempore
+                    voluptate. Architecto assumenda deserunt dignissimos libero molestiae nisi officiis
+                    pariatur qui. Animi, commodi inventore.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer-ending clearfix">
+                    <ul class="clearfix">
+                        <li>Сайт независимого консультанта компании</li>
+                        <li>
+                            <ul class="social clearfix">
+                                <li class="youtube"><a href="#"><span class="fa fa-youtube"></span></a></li>
+                                <li class="vk"><a href="#"><span class="fa fa-vk"></span></a></li>
+                                <li class="ok"><a href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                                <li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li class="facebook"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Разработка сайта студия www
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
