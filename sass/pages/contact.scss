@@ -39,7 +39,12 @@
       input[type=submit] {
         background: #dfad00;
         color: #ffffff;
-        font-size: 1.1em;
+
+        &:hover {
+          transition: all 0.5s ease;
+          background: #ffffff;
+          color: #dfad00;
+        }
       }
     }
   }
